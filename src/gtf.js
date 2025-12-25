@@ -39,7 +39,7 @@ async function getFile(url,File,head = { headers :  { 'User-Agent': 'Mozilla/5.0
 });
     return "process ok"
       } else {
-        return `Error with status code ${req.status} see to (), for checked type error status code`
+        throw `Error with status code ${req.status} see to -> (https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) To see the error type status code`
       }
     } catch (error){
      console.log('Download error ',error.message);
