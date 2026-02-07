@@ -1,7 +1,4 @@
 const mutation = (words) => {
-  if(!Array.isArray(words)) {
-    throw TypeError("Args must be Array")
-  };
    let status = "";
    const [word,mutation] = words;
    for (let m of mutation.toLowerCase() ) {
